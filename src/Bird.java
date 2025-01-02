@@ -1,13 +1,14 @@
-public class Birds extends Animals {
+public class Bird extends Animals {
     public String habitatArea;
-    private int population;
+    private long population;
     protected boolean isPredator;
     String birdType;
 
-    public Birds() {
+    public Bird() {
     }
 
-    public Birds(String habitat, String food, String habitatArea, int population, boolean isPredator, String birdType) {
+    public Bird(String habitat, String food, String habitatArea, long population,
+                 boolean isPredator, String birdType) {
         super(habitat, food);
         this.habitatArea = habitatArea;
         this.population = population;
@@ -15,11 +16,11 @@ public class Birds extends Animals {
         this.birdType = birdType;
     }
 
-    public int getPopulation() {
+    public long getPopulation() {
         return population;
     }
 
-    public void setPopulation(int population) {
+    public void setPopulation(long population) {
         this.population = population;
     }
 
